@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setembro Amarelo 💛</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff9df;color:#4b421f}.card{width:100%;max-width:520px;background:#fff;border-radius:24px;padding:32px 24px;text-align:center;box-shadow:0 8px 30px rgba(100,80,0,.10)}.heart{font-size:42px;margin-bottom:6px}h1{margin:0;color:#b28a00;font-size:28px}.subtitle{margin:8px 0 26px;font-size:17px;color:#75682f}.message{font-size:20px;line-height:1.5;font-weight:600;margin:0 0 24px}.verse{background:#fff8c9;border-radius:18px;padding:20px 18px;margin-bottom:22px}.verse-text{font-size:18px;line-height:1.55;font-style:italic;margin:0 0 10px}.reference{font-weight:700;color:#8d7000}.footer{font-size:14px;line-height:1.5;color:#777}.cvv{font-weight:700;color:#a17d00}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="heart">💛</div>
+<h1>SETEMBRO AMARELO</h1>
+<p class="subtitle">Uma mensagem de fé para você</p>
+<p class="message" id="message"></p>
+<section class="verse">
+<p class="verse-text" id="verse"></p>
+<div class="reference" id="reference"></div>
+</section>
+<p class="footer">Você não precisa enfrentar tudo sozinho(a). 💛<br>
+Converse com alguém de confiança e, se precisar, procure ajuda profissional.<br>
+No Brasil, o <span class="cvv">CVV atende pelo 188</span>, 24 horas.</p>
+</main>
+<script>
+const messages=[
+["Deus conhece as suas dores, mesmo aquelas que você não consegue explicar. Continue aqui. Sua vida tem valor. 💛","Perto está o Senhor dos que têm o coração quebrantado, e salva os contritos de espírito.","Salmos 34:18"],
+["Mesmo nos dias em que você não consegue enxergar uma saída, lembre-se: você não está sozinho(a). Deus está com você.","Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus.","Isaías 41:10"],
+["Você pode descansar o coração em Deus e também pedir ajuda. Cuidar da sua vida é importante.","Lançando sobre ele toda a vossa ansiedade, porque ele tem cuidado de vós.","1 Pedro 5:7"],
+["Há dias difíceis, mas um dia difícil não define toda a sua história. Permaneça. 💛","Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia.","Salmos 46:1"],
+["Quando o coração estiver cansado, não tenha vergonha de pedir colo, oração ou ajuda. Você importa.","Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei.","Mateus 11:28"],
+["Talvez hoje você só consiga dar um pequeno passo. Tudo bem. Dê esse passo e continue. Deus permanece ao seu lado.","Muitas são as aflições do justo, mas o Senhor o livra de todas.","Salmos 34:19"],
+["Sua vida é preciosa. Não guarde uma dor enorme sozinho(a). Fale com alguém e permita-se receber cuidado.","Os justos clamam, e o Senhor os ouve, e os livra de todas as suas angústias.","Salmos 34:17"],
+["Quando faltar força, lembre-se de que pedir ajuda também é um ato de coragem. Você merece cuidado e acolhimento. 💛","Eu te fortaleço, e te ajudo, e te sustento.","Isaías 41:10"]
+];
+const item=messages[Math.floor(Math.random()*messages.length)];
+document.getElementById("message").textContent=item[0];
+document.getElementById("verse").textContent="“"+item[1]+"”";
+document.getElementById("reference").textContent=item[2];
+</script>
+</body>
+</html>
